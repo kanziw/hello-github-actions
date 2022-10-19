@@ -8,15 +8,13 @@ on:
       - 'releases/*'
 
 jobs:
-  lint-and-build:
-    name: Lint and Build
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: npm install
       - run: |
           npm run lint
-          npm run build
 
   test: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
