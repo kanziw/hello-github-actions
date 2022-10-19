@@ -1,6 +1,5 @@
 {
   "name": "hello-github-actions",
-  "packageManager": "yarn@3.2.4",
   "scripts": {
     "build": "tsc",
     "lint": "eslint src"
