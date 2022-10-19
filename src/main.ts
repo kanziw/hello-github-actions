@@ -1,6 +1,6 @@
-import core from '@actions/core'
+import * as core from '@actions/core'
 import { exec } from '@actions/exec'
-import github from '@actions/github'
+import * as github from '@actions/github'
 
 async function run() {
   const targetDir = core.getInput('targetDir')
