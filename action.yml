@@ -1,0 +1,12 @@
+name: 'Playground'
+description: 'Play and Test!'
+inputs:
+  targetDir:
+    description: 'Target directory'
+    required: true
+outputs:
+  message:
+    description: 'Result message'
+runs:
+  using: 'node16'
+  main: '-r ./.pnp.cjs lib/index.js'
